@@ -13,4 +13,16 @@ average_price = total_price/len(prices)
 
 print(f'The average price of haircut is ${average_price}')
 
-new_prices = [discount for discount]
+lower_prices = []
+
+for discount in prices:
+    lower_prices.append(discount-5)
+
+print(lower_prices)
+
+total_revenue = 0
+
+for i in range(len(hairstyles)):
+    total_revenue = prices[i]+last_week[i]
+
+print(f'Total Revenue: {total_revenue}')
