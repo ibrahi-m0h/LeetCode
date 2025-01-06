@@ -7,10 +7,10 @@ poster_price = 24.33
 
 prices = [tshirt_price, shorts_price, mug_price, poster_price]
 
-max = prices[0]
+max_price = prices[0]
 
 for price in prices:
-    if price > max:
-        max = price
+    if price > max_price:
+        max_price = price
 
-print(max)
+print(max_price)
