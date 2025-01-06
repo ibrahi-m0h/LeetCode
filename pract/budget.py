@@ -10,8 +10,8 @@
 # Your remaining budget is: $3491.75
 
 # Define global variables
-current_budget = 3500.75
-shirt_expense = 9
+current_budget = input("Enter your total savings: ")
+shirt_expense = input("Enter the expense amount: ")
 
 def print_current_budget():
     print(f"The current budget is ${current_budget}")
@@ -22,7 +22,7 @@ def deduct_budget(budget, expense):
     return budget - expense
 
 
-remaining_budget = deduct_budget(current_budget, shirt_expense)
+remaining_budget = deduct_budget(int(current_budget), int(shirt_expense))
 
 
 print_current_budget()
