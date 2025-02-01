@@ -19,7 +19,26 @@ class Car implements ICar{
     }
 }
 
+class ElectricCar extends Car{
+    batteryLevel: number
 
+    constructor(
+        make: string,
+        model: string,
+        year: number,
+        batteryLevel: number
+    ) {
+    super(make, model, year);
+    this.batteryLevel = batteryLevel;
+    }
+
+    startEngine(): void {
+        console.log(`Electric Car Online (Battery Level: ${this.batteryLevel}%)`)
+    }
+}
 
 const myCar = new Car('Honda', 'Civic', 2022);
 myCar.startEngine();
+
+const myElectricCar = new ElectricCar('Tesla', 'Model S', 2024, 89)
+myElectricCar.startEngine();
