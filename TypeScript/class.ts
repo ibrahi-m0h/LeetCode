@@ -37,7 +37,7 @@ class ElectricCar extends Car{
     }
 }
 
-const myCar = new Car('Honda', 'Civic', 2022);
+const myCar = new Car('Honda', 'Accord', 2024);
 myCar.startEngine();
 
 const myElectricCar = new ElectricCar('Tesla', 'Model Y', 2024, 89)
