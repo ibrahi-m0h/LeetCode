@@ -17,3 +17,16 @@
 // Output: [0,1]
 
 // Bonus: Can you come up with an algorithm that is less than O(n2) time complexity?
+
+var twoSum = function(nums, target) {
+    // Create Hashmap
+    const pairIdx = {};
+
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        if (target - num in pairIdx) {
+            return [i, pairIdx[target - num]];
+        }
+        pairIdx[num] = i;
+    }    
+};
